@@ -86,11 +86,11 @@ def handle_message(event):
                         text = 'menu1',
                         actions = [
                             MessageAction(
-                                label = '咖啡有什麼好處',
-                                text = '讓人有精神'),
+                                label = '咖啡有什麼壞處',
+                                text = '睡不著'),
                             URIAction(
-                                label = '伯朗咖啡',
-                                uri = 'https://www.mrbrown.com.tw/')]),
+                                label = '林安可',
+                                uri = 'https://www.youtube.com/watch?v=yWHs85-We1M')]),
                     #第二個
                     CarouselColumn(
                         thumbnail_image_url = 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
@@ -98,11 +98,11 @@ def handle_message(event):
                         text = 'menu2',
                         actions = [
                             MessageAction(
-                                label = '咖啡有什麼好處',
-                                text = '讓人有精神'),
+                                label = '咖啡有什麼壞處',
+                                text = '睡不著'),
                             URIAction(
-                                label = '伯朗咖啡',
-                                uri = 'https://www.mrbrown.com.tw/')])
+                                label = '林安可',
+                                uri = 'https://www.youtube.com/watch?v=yWHs85-We1M')])
                 ])
             )
 
@@ -119,13 +119,13 @@ def handle_message(event):
                     ImageCarouselColumn(
                         image_url = 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
                         action = URIAction(
-                            label = '伯朗咖啡',
+                            label = '紅不讓',
                             uri = 'https://www.mrbrown.com.tw/')),
                     #第二張圖
                     ImageCarouselColumn(
                         image_url = 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
                         action = URIAction(
-                            label = '伯朗咖啡',
+                            label = '紅不讓',
                             uri = 'https://www.mrbrown.com.tw/'))                       
                 ])
             )
