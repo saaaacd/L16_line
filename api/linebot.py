@@ -39,7 +39,7 @@ def handle_message(event):
         confirm_template = TemplateSendMessage(
             alt_text = 'confirm template',
             template = ConfirmTemplate(
-                text = 'drink coffee?',
+                text = '18?',
                 actions = [
                     MessageAction(
                         label = 'yes',
@@ -62,11 +62,11 @@ def handle_message(event):
                 text = 'Enjoy your coffee',
                 actions = [
                     MessageAction(
-                        label = '咖啡有什麼好處',
-                        text = '讓人有精神'),
+                        label = '咖啡有什麼壞處',
+                        text = '睡不著'),
                     URIAction(
-                        label = '伯朗咖啡',
-                        uri = 'https://www.mrbrown.com.tw/')]
+                        label = 'yt',
+                        uri = 'https://www.youtube.com/')]
                 )
             )
 
@@ -98,10 +98,10 @@ def handle_message(event):
                         text = 'menu2',
                         actions = [
                             MessageAction(
-                                label = '咖啡有什麼好處',
-                                text = '讓人有精神'),
+                                label = 'test',
+                                text = 'eeee'),
                             URIAction(
-                                label = '伯朗咖啡',
+                                label = 'eee',
                                 uri = 'https://www.mrbrown.com.tw/')])
                 ])
             )
