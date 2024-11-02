@@ -35,7 +35,7 @@ def callback():
 @line_handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
 
-    if event.message.text == 'confirm':
+    if event.message.text == '2':
         confirm_template = TemplateSendMessage(
             alt_text = 'confirm template',
             template = ConfirmTemplate(
@@ -53,7 +53,7 @@ def handle_message(event):
 
 
     #按鈕樣板
-    if event.message.text == 'button':
+    if event.message.text == '1':
         buttons_template = TemplateSendMessage(
             alt_text = 'buttons template',
             template = ButtonsTemplate(
@@ -74,7 +74,7 @@ def handle_message(event):
 
 
     #carousel樣板
-    if event.message.text == 'carousel':
+    if event.message.text == '3':
         carousel_template = TemplateSendMessage(
             alt_text = 'carousel template',
             template = CarouselTemplate(
@@ -110,7 +110,7 @@ def handle_message(event):
 
 
     #image carousel樣板
-    if event.message.text == 'image carousel':
+    if event.message.text == '4':
         image_carousel_template = TemplateSendMessage(
             alt_text = 'image carousel template',
             template = ImageCarouselTemplate(
